@@ -8,15 +8,18 @@ $(function() {
   /* Insert scorers to DOM  */
   function insertContent(scorers) {
     console.log(scorers);
-    for (key in scorers) {
-    for(var i = 0 ; i < scorers[key].length; i++) {
+
+    for(var i = 0 ; i < 10; i++) {
         var tr = $('<tr>', {class: "scorers"});
-        var td = $('<td>').text(scorers[key][i].fullname);
-        tr.append(td);
+        var td_position = $('<td>').text($("tr").index(".scorers"));
+        console.log(td_position);
+        // var td_position = $('<td>').text(td_index);
+        var td_fullname = $('<td>').text(scorers[i].fullname);
+        tr.append(td_position);
+        tr.append(td_fullname);
         scorerTable.append(tr);
     };
   }
-}
 
   /* Load scorers and insert them into the DOM
   */
