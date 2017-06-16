@@ -5,35 +5,145 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #2e3134;
+  height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  align-items: center;
+  text-align: center;
+}
+
+body > * {
+  flex: 1 100%;
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .main {
+    order: 1;
+  }
+  .footer {
+    order: 2;
+  }
 }
 
 .main_width {
   width: 750px;
   margin: 0 auto;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
-header, article, footer {
-  width: 100%;
-}
-
-header {
-  height: 200px;
+.top {
+  margin-top: 9vh;
+  height: 18vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: left;
 }
 
 .serieA {
   background: url("../images/seriea.png");
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   background-repeat: no-repeat;
   position: relative;
-  background-size: contain;
-  float: left;
+  background-size: 150% 150%;
+  background-position: 50% 50%;
+  background-color: white;
+  margin-right: 20px;
+  align-self: center;
 }
 
-.top {
-  height: 200px;
+.top_header {
+  align-self: center;
+  color: white;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.center {
+  height: 62vh;
+}
+
+.scorer_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scorers {
+  height: 40px;
+}
+
+.scorers:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.scorers:nth-child(odd) {
+  background-color: white;
+}
+
+.first_row {
+  background-color: darkgreen;
+  color: white;
+  font-size: 10px;
+  height: 30px;
+}
+
+.first_column {
+  width: 60px;
+  font-weight: bold;
+}
+
+.third_column {
+  width: 60px;
+  font-weight: bold;
+}
+
+.second_column {
+  text-align: left;
+}
+
+.border_space {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  padding-left: 30px;
+}
+
+.footer {
+  background-color: #15191c;
+  color: #535c62;
+  height: 11vh;
+  font-size: 12px;
+  text-align: center;
+}
+
+.pgs {
+  margin-top: 20px;
+  margin-left: 225px;
+  margin-right: 225px;
+  padding: 15px 0px;
+  border-top: 1px solid #535c62;
+  border-bottom: 1px solid #535c62;
+  text-align: center;
 }
 
 /*# sourceMappingURL=../maps/index.css.map */

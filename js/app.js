@@ -10,9 +10,11 @@ $(function() {
 
     for(var i = 0 ; i < 10; i++) {
         var tr = $('<tr>', {class: "scorers"});
-        var td_position = $('<td>').text(i + 1);
-        var td_fullname = $('<td>').text(scorers[i].fullname);
-        var td_goals = $('<td>').text(scorers[i].goals);
+        var td_position = $('<td>', {class: "first_column"}).text(i + 1);
+        var td_fullname = $('<td>', {class: "second_column"});
+        var td_goals = $('<td>', {class: "third_column"}).text(scorers[i].goals);
+        var div_fullname = $('<div>', {class: "border_space"}).text(scorers[i].fullname);
+        td_fullname.append(div_fullname);
         tr.append(td_position);
         tr.append(td_fullname);
         tr.append(td_goals);
