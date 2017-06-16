@@ -1,0 +1,35 @@
+.top {
+  margin-top: 9vh;
+  height: 18vh;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: left;
+> .serieA {
+  background: url("../images/seriea.png");
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 150% 150%;
+  background-position: 50% 50%;
+  background-color: white;
+  margin-right: 20px;
+  align-self: center;
+} > .top_header {
+  align-self: center;
+  color: white;
+> h1 {
+  font-size: 20px;
+} > p {
+  margin-top: 10px;
+  font-size: 12px;
+    }
+  }
+}

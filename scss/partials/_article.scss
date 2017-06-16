@@ -1,0 +1,49 @@
+.center {
+    height: 62vh;
+> .scorer_table {
+  width: 100%;
+  border-collapse: collapse;
+  }
+}
+.first_row {
+  background-color: darkgreen;
+  color: white;
+  font-size: 12px;
+  height: 30px;
+> .first_column_header {
+  font-weight: lighter;
+} > .second_column_header {
+  @extend .first_column_header;
+  text-align: left;
+  padding-left: 35px;
+} > .third_column_header {
+  @extend .first_column_header;
+  }
+}
+.scorers {
+  height: 40px;
+&:nth-child(odd) {
+  background-color: #eaeaea;
+} &:nth-child(even) {
+  background-color: white;
+  }
+}
+
+.first_column {
+  width: 80px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.second_column {
+  text-align: left;
+  font-size: 14px;
+> .border_space {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding-left: 35px;
+  line-height: 25px;
+  }
+}
+.third_column {
+  @extend .first_column;
+}

@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #2e3134;
   height: 100vh;
   display: -webkit-box;
@@ -22,20 +22,8 @@ body > * {
   flex: 1 100%;
 }
 
-@media all and (min-width: 800px) {
-  .main {
-    flex: 3 0px;
-  }
-  .main {
-    order: 1;
-  }
-  .footer {
-    order: 2;
-  }
-}
-
 .main_width {
-  width: 750px;
+  width: 650px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -53,7 +41,7 @@ body > * {
   text-align: left;
 }
 
-.serieA {
+.top > .serieA {
   background: url("../images/seriea.png");
   height: 100px;
   width: 100px;
@@ -66,16 +54,16 @@ body > * {
   align-self: center;
 }
 
-.top_header {
+.top > .top_header {
   align-self: center;
   color: white;
 }
 
-h1 {
+.top > .top_header > h1 {
   font-size: 20px;
 }
 
-p {
+.top > .top_header > p {
   margin-top: 10px;
   font-size: 12px;
 }
@@ -84,63 +72,69 @@ p {
   height: 62vh;
 }
 
-.scorer_table {
+.center > .scorer_table {
   width: 100%;
   border-collapse: collapse;
+}
+
+.first_row {
+  background-color: darkgreen;
+  color: white;
+  font-size: 12px;
+  height: 30px;
+}
+
+.first_row > .first_column_header, .first_row > .second_column_header, .first_row > .third_column_header {
+  font-weight: lighter;
+}
+
+.first_row > .second_column_header {
+  text-align: left;
+  padding-left: 35px;
 }
 
 .scorers {
   height: 40px;
 }
 
-.scorers:nth-child(even) {
-  background-color: lightgrey;
+.scorers:nth-child(odd) {
+  background-color: #eaeaea;
 }
 
-.scorers:nth-child(odd) {
+.scorers:nth-child(even) {
   background-color: white;
 }
 
-.first_row {
-  background-color: darkgreen;
-  color: white;
-  font-size: 10px;
-  height: 30px;
-}
-
-.first_column {
-  width: 60px;
+.first_column, .third_column {
+  width: 80px;
   font-weight: bold;
-}
-
-.third_column {
-  width: 60px;
-  font-weight: bold;
+  font-size: 20px;
 }
 
 .second_column {
   text-align: left;
+  font-size: 14px;
 }
 
-.border_space {
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
-  padding-left: 30px;
+.second_column > .border_space {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding-left: 35px;
+  line-height: 25px;
 }
 
 .footer {
   background-color: #15191c;
-  color: #535c62;
   height: 11vh;
-  font-size: 12px;
-  text-align: center;
 }
 
 .pgs {
   margin-top: 20px;
-  margin-left: 225px;
-  margin-right: 225px;
+  margin-left: 175px;
+  margin-right: 175px;
   padding: 15px 0px;
+  font-size: 12px;
+  color: #535c62;
   border-top: 1px solid #535c62;
   border-bottom: 1px solid #535c62;
   text-align: center;
