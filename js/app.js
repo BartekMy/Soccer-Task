@@ -11,12 +11,12 @@ $(function() {
 
     for(var i = 0 ; i < 10; i++) {
         var tr = $('<tr>', {class: "scorers"});
-        var td_position = $('<td>').text($("tr").index(".scorers"));
-        console.log(td_position);
-        // var td_position = $('<td>').text(td_index);
+        var td_position = $('<td>').text(i + 1);
         var td_fullname = $('<td>').text(scorers[i].fullname);
+        var td_goals = $('<td>').text(scorers[i].goals);
         tr.append(td_position);
         tr.append(td_fullname);
+        tr.append(td_goals);
         scorerTable.append(tr);
     };
   }
