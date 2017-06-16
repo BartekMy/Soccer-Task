@@ -18,12 +18,22 @@ header, article, footer {
   width: 100%;
 }
 
+header {
+  height: 200px;
+}
+
 .serieA {
   background: url("../images/seriea.png");
   height: 200px;
+  width: 200px;
   background-repeat: no-repeat;
   position: relative;
   background-size: contain;
+  float: left;
+}
+
+.top {
+  height: 200px;
 }
 
 /*# sourceMappingURL=../maps/index.css.map */
