@@ -6,3 +6,22 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.main_width {
+  width: 750px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+header, article, footer {
+    width: 100%;
+}
+
+.serieA {
+  background: url("../images/seriea.png");
+  height: 200px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: contain;
+}

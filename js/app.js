@@ -7,7 +7,6 @@ $(function() {
 
   /* Insert scorers to DOM  */
   function insertContent(scorers) {
-    console.log(scorers);
 
     for(var i = 0 ; i < 10; i++) {
         var tr = $('<tr>', {class: "scorers"});
